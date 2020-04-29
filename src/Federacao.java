@@ -23,6 +23,7 @@ public class Federacao {
             Utilizador atleta = new Utilizador("Ricardo","ativo",21,i,"Viseu");
             listaAtletas.add(atleta);
         }
+
     }
 
     public static Federacao getInstance() {
@@ -62,6 +63,8 @@ public class Federacao {
 
     public synchronized void resetFederacao(){
         listaProvas.clear();
+        listaAtletas.clear();
+        listaRegistoProvas.clear();
 
     }
 
